@@ -1,0 +1,8 @@
+<li class="left"><a href="{{ site.github.repository_url }}">View On GitHub</a></li>
+{% for item in site.data.navigation %}
+<li class="left">
+  <a href="{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %}>
+    {{ item.name }}
+  </a>
+</li>
+{% endfor %}

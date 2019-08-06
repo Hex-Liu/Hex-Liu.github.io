@@ -1,0 +1,15 @@
+---
+layout: default
+title: Home
+---
+
+{% for item in site.data.index %}
+<h1>{{ item.title }}</h1>
+<h2>Problem</h2>
+<p>{{ item.abstract }}</p>
+<h2>Model</h2>
+<p>{{ item.model }}</p>
+<h2>Result</h2>
+<p>{{ item.result }}</p>
+
+{% endfor %}
